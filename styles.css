@@ -59,3 +59,16 @@ main { flex: 1; }
 @media (max-width: 720px) {
   .services { grid-template-columns: 1fr; gap: 24px; }
 }
+
+.status {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: .85rem !important; font-weight: 600; color: var(--muted);
+  border: 1px solid var(--border); border-radius: 999px; padding: 4px 12px;
+  margin: 0 0 24px !important;
+}
+.dot {
+  width: 8px; height: 8px; border-radius: 50%; background: #22c55e;
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse { 50% { opacity: .35; } }
+@media (prefers-reduced-motion: reduce) { .dot { animation: none; } }
