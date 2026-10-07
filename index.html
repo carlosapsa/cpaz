@@ -4,239 +4,40 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cpaz AI · Soluciones de Inteligencia Artificial</title>
-  <meta name="description" content="Cpaz AI diseña, construye y opera soluciones de inteligencia artificial para empresas: agentes, automatización, analítica predictiva e IA generativa segura.">
+  <meta name="description" content="Cpaz AI: soluciones de inteligencia artificial para empresas.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%234f46e5'/><path d='M9 22 16 8l7 14' stroke='white' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="nav" id="top">
-    <div class="container nav-inner">
-      <a href="#top" class="brand" aria-label="Cpaz AI, inicio">
-        <span class="logo" aria-hidden="true">
-          <svg viewBox="0 0 32 32"><rect width="32" height="32" rx="8"/><path d="M9 22 16 8l7 14"/></svg>
-        </span>
-        <span>Cpaz<span class="accent">AI</span></span>
-      </a>
-      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
-        <span></span><span></span><span></span>
-      </button>
-      <nav id="menu" class="menu">
-        <a href="#servicios">Servicios</a>
-        <a href="#sectores">Sectores</a>
-        <a href="#metodologia">Metodología</a>
-        <a href="#casos">Casos de éxito</a>
-        <a href="#contacto" class="btn btn-sm">Hablemos</a>
-      </nav>
-    </div>
+  <header class="container nav">
+    <span class="brand">Cpaz<span class="accent">AI</span></span>
   </header>
 
-  <main>
+  <main class="container">
     <section class="hero">
-      <div class="hero-bg" aria-hidden="true"></div>
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <p class="eyebrow">Inteligencia artificial para empresas</p>
-          <h1>Convertimos la IA en <span class="grad">resultados de negocio</span> medibles.</h1>
-          <p class="lead">Diseñamos, construimos y operamos soluciones de inteligencia artificial seguras y escalables: desde agentes autónomos hasta analítica predictiva, integradas en los sistemas que tu empresa ya utiliza.</p>
-          <div class="hero-cta">
-            <a href="#contacto" class="btn">Solicitar diagnóstico gratuito</a>
-            <a href="#servicios" class="btn btn-ghost">Ver soluciones</a>
-          </div>
-          <ul class="trust">
-            <li>ISO 27001</li>
-            <li>Cumplimiento RGPD</li>
-            <li>Preparados para el AI Act</li>
-          </ul>
-        </div>
-        <div class="hero-visual" aria-hidden="true">
-          <div class="panel">
-            <div class="panel-head"><span></span><span></span><span></span><em>agente-operaciones</em></div>
-            <div class="panel-body">
-              <p class="msg user">Resume las incidencias críticas de esta semana y propón acciones.</p>
-              <p class="msg ai">He analizado <b>1.284</b> tickets. 3 patrones explican el <b>71&nbsp;%</b> de las incidencias críticas. Propuesta: automatizar la reasignación del nivel 1 y ajustar el umbral de alertas del ERP.</p>
-              <div class="bars">
-                <i style="--h:40%"></i><i style="--h:65%"></i><i style="--h:52%"></i><i style="--h:80%"></i><i style="--h:68%"></i><i style="--h:92%"></i><i style="--h:75%"></i>
-              </div>
-              <div class="kpis">
-                <div><strong>-38&nbsp;%</strong><small>tiempo de resolución</small></div>
-                <div><strong>+24&nbsp;%</strong><small>satisfacción</small></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <h1>Inteligencia artificial al servicio de tu <span class="accent">empresa</span>.</h1>
+      <p>Diseñamos y desplegamos soluciones de IA seguras, prácticas y orientadas a resultados.</p>
     </section>
 
-    <section class="stats">
-      <div class="container stats-grid">
-        <div><strong data-count="120">0</strong><span>+ proyectos desplegados</span></div>
-        <div><strong data-count="35">0</strong><span>% ahorro operativo medio</span></div>
-        <div><strong data-count="12">0</strong><span>semanas de media a producción</span></div>
-        <div><strong data-count="98">0</strong><span>% clientes que repiten</span></div>
-      </div>
-    </section>
-
-    <section id="servicios" class="section">
-      <div class="container">
-        <header class="section-head">
-          <p class="eyebrow">Servicios</p>
-          <h2>Soluciones de IA de principio a fin</h2>
-          <p>Acompañamos a tu organización desde la estrategia hasta la operación en producción, con equipos expertos en datos, ingeniería y negocio.</p>
-        </header>
-        <div class="cards">
-          <article class="card">
-            <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M6.3 6.3l2.1 2.1M15.6 15.6l2.1 2.1M6.3 17.7l2.1-2.1M15.6 8.4l2.1-2.1"/><circle cx="12" cy="12" r="3"/></svg></div>
-            <h3>Estrategia y consultoría de IA</h3>
-            <p>Identificamos los casos de uso con mayor retorno, evaluamos la madurez de tus datos y definimos una hoja de ruta realista.</p>
-          </article>
-          <article class="card">
-            <div class="icon"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="12" rx="2"/><path d="M8 20h8M12 16v4M8 9h.01M16 9h.01M9 12.5c1.7 1 4.3 1 6 0"/></svg></div>
-            <h3>Agentes y asistentes inteligentes</h3>
-            <p>Agentes basados en modelos de lenguaje que atienden clientes, consultan tus sistemas y ejecutan tareas con supervisión humana.</p>
-          </article>
-          <article class="card">
-            <div class="icon"><svg viewBox="0 0 24 24"><path d="M4 19V5M4 19h16M8 15l3-4 3 2 5-6"/></svg></div>
-            <h3>Analítica predictiva</h3>
-            <p>Modelos de previsión de demanda, detección de fraude, mantenimiento predictivo y scoring de clientes, explicables y auditables.</p>
-          </article>
-          <article class="card">
-            <div class="icon"><svg viewBox="0 0 24 24"><path d="M4 7h10M4 12h16M4 17h7"/><circle cx="18" cy="7" r="2"/><circle cx="15" cy="17" r="2"/></svg></div>
-            <h3>Automatización inteligente</h3>
-            <p>Procesamiento documental, extracción de datos y flujos automatizados que eliminan tareas repetitivas en back-office.</p>
-          </article>
-          <article class="card">
-            <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></div>
-            <h3>IA responsable y gobierno</h3>
-            <p>Marcos de gobierno, evaluación de riesgos y cumplimiento normativo (RGPD, AI Act) para desplegar IA con confianza.</p>
-          </article>
-          <article class="card">
-            <div class="icon"><svg viewBox="0 0 24 24"><path d="M7 18a4 4 0 0 1-.6-8 6 6 0 0 1 11.6 1.5A3.5 3.5 0 0 1 17.5 18H7Z"/><path d="m10 14 2-2 2 2M12 12v5"/></svg></div>
-            <h3>MLOps y plataforma de datos</h3>
-            <p>Infraestructura en la nube o on-premise para entrenar, desplegar y monitorizar modelos de forma fiable y escalable.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="sectores" class="section alt">
-      <div class="container">
-        <header class="section-head">
-          <p class="eyebrow">Sectores</p>
-          <h2>Experiencia en industrias reguladas y exigentes</h2>
-        </header>
-        <div class="tabs" role="tablist" aria-label="Sectores">
-          <button role="tab" aria-selected="true" aria-controls="t-banca" id="tab-banca">Banca y seguros</button>
-          <button role="tab" aria-selected="false" aria-controls="t-retail" id="tab-retail" tabindex="-1">Retail</button>
-          <button role="tab" aria-selected="false" aria-controls="t-industria" id="tab-industria" tabindex="-1">Industria</button>
-          <button role="tab" aria-selected="false" aria-controls="t-salud" id="tab-salud" tabindex="-1">Salud</button>
-        </div>
-        <div class="tab-panels">
-          <div role="tabpanel" id="t-banca" aria-labelledby="tab-banca">
-            <h3>Banca y seguros</h3>
-            <p>Detección de fraude en tiempo real, automatización de siniestros, análisis de riesgo crediticio y asistentes para gestores con trazabilidad completa.</p>
-            <ul><li>Reducción del fraude hasta un 45&nbsp;%</li><li>Tramitación de siniestros en minutos</li><li>Modelos explicables para supervisores</li></ul>
-          </div>
-          <div role="tabpanel" id="t-retail" aria-labelledby="tab-retail" hidden>
-            <h3>Retail y consumo</h3>
-            <p>Previsión de demanda, precios dinámicos, recomendaciones personalizadas y atención al cliente omnicanal con agentes conversacionales.</p>
-            <ul><li>Roturas de stock un 30&nbsp;% menores</li><li>Mayor ticket medio con personalización</li><li>Atención 24/7 en varios idiomas</li></ul>
-          </div>
-          <div role="tabpanel" id="t-industria" aria-labelledby="tab-industria" hidden>
-            <h3>Industria y energía</h3>
-            <p>Mantenimiento predictivo, control de calidad con visión artificial y optimización de la producción y del consumo energético.</p>
-            <ul><li>Paradas no planificadas un 25&nbsp;% menores</li><li>Inspección visual automática</li><li>Optimización energética continua</li></ul>
-          </div>
-          <div role="tabpanel" id="t-salud" aria-labelledby="tab-salud" hidden>
-            <h3>Salud y farma</h3>
-            <p>Apoyo a la decisión clínica, codificación automática de informes y aceleración de procesos regulatorios, siempre con privacidad por diseño.</p>
-            <ul><li>Codificación clínica asistida</li><li>Documentación regulatoria más ágil</li><li>Datos protegidos y anonimizados</li></ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="metodologia" class="section">
-      <div class="container">
-        <header class="section-head">
-          <p class="eyebrow">Metodología</p>
-          <h2>Del piloto a producción en cuatro fases</h2>
-        </header>
-        <ol class="steps">
-          <li><span>01</span><h3>Descubrimiento</h3><p>Talleres con negocio para priorizar casos de uso por impacto y viabilidad.</p></li>
-          <li><span>02</span><h3>Prueba de concepto</h3><p>Validamos la solución con tus datos reales en 4–6 semanas y medimos el retorno.</p></li>
-          <li><span>03</span><h3>Industrialización</h3><p>Integración con tus sistemas, seguridad, pruebas y despliegue en producción.</p></li>
-          <li><span>04</span><h3>Operación y mejora</h3><p>Monitorización continua, reentrenamiento y evolución según nuevas necesidades.</p></li>
-        </ol>
-      </div>
-    </section>
-
-    <section id="casos" class="section alt">
-      <div class="container">
-        <header class="section-head">
-          <p class="eyebrow">Casos de éxito</p>
-          <h2>Impacto real en organizaciones como la tuya</h2>
-        </header>
-        <div class="cases">
-          <article class="case">
-            <p class="tag">Aseguradora · Europa</p>
-            <h3>Gestión de siniestros con IA generativa</h3>
-            <p>Un agente clasifica, extrae y valida la documentación de cada siniestro antes de que llegue al tramitador.</p>
-            <p class="result"><strong>-60&nbsp;%</strong> tiempo de tramitación</p>
-          </article>
-          <article class="case">
-            <p class="tag">Distribución · España</p>
-            <h3>Previsión de demanda en 900 tiendas</h3>
-            <p>Modelos de previsión por tienda y producto integrados en el sistema de reaprovisionamiento.</p>
-            <p class="result"><strong>-28&nbsp;%</strong> mermas y roturas</p>
-          </article>
-          <article class="case">
-            <p class="tag">Fabricación · Latam</p>
-            <h3>Mantenimiento predictivo en planta</h3>
-            <p>Sensores IoT y modelos de anomalías anticipan fallos en líneas críticas con días de antelación.</p>
-            <p class="result"><strong>+1,8 M€</strong> ahorro anual</p>
-          </article>
-        </div>
-        <blockquote class="quote">
-          <p>«Cpaz AI no nos vendió tecnología: nos ayudó a elegir dónde la IA aportaba valor y a llevarlo a producción en tiempo récord.»</p>
-          <footer>Directora de Operaciones · Grupo asegurador</footer>
-        </blockquote>
-      </div>
-    </section>
-
-    <section id="contacto" class="section contact">
-      <div class="container contact-inner">
-        <div>
-          <p class="eyebrow">Contacto</p>
-          <h2>¿Listo para dar el siguiente paso?</h2>
-          <p>Cuéntanos tu reto y te proponemos, sin compromiso, un diagnóstico de oportunidades de IA para tu empresa en menos de 48 horas.</p>
-          <ul class="contact-list">
-            <li><b>Email</b> <a href="mailto:hola@cpaz.ai">hola@cpaz.ai</a></li>
-            <li><b>Oficinas</b> Madrid · Barcelona · Ciudad de México</li>
-          </ul>
-        </div>
-        <form class="form" id="contact-form" novalidate>
-          <label>Nombre<input name="nombre" required autocomplete="name"></label>
-          <label>Email corporativo<input name="email" type="email" required autocomplete="email"></label>
-          <label>Empresa<input name="empresa" autocomplete="organization"></label>
-          <label>¿En qué podemos ayudarte?<textarea name="mensaje" rows="4" required></textarea></label>
-          <button class="btn" type="submit">Enviar mensaje</button>
-          <p class="form-status" role="status" aria-live="polite"></p>
-        </form>
-      </div>
+    <section class="services">
+      <article>
+        <h2>Estrategia</h2>
+        <p>Identificamos dónde la IA aporta más valor a tu negocio.</p>
+      </article>
+      <article>
+        <h2>Desarrollo</h2>
+        <p>Construimos agentes, automatizaciones y modelos a medida.</p>
+      </article>
+      <article>
+        <h2>Operación</h2>
+        <p>Mantenemos y mejoramos las soluciones en producción.</p>
+      </article>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <a href="#top" class="brand">Cpaz<span class="accent">AI</span></a>
-      <p>© <span id="year">2026</span> Cpaz AI. Soluciones de inteligencia artificial para empresas.</p>
-      <nav><a href="#servicios">Servicios</a><a href="#casos">Casos</a><a href="#contacto">Contacto</a></nav>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+  <footer class="container footer">© 2026 Cpaz AI</footer>
 </body>
 </html>
