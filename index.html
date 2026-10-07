@@ -3,42 +3,113 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cpaz AI · Laboratorio de IA</title>
-  <meta name="description" content="Cpaz AI: un pequeño laboratorio que crea cosas con inteligencia artificial.">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%234f46e5'/><path d='M9 22 16 8l7 14' stroke='white' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+  <title>Cpaz AI · Boutique de IA</title>
+  <meta name="description" content="Cpaz AI es una boutique de inteligencia artificial: un laboratorio pequeño que investiga, prototipa y construye en la frontera de la IA.">
+  <meta name="theme-color" content="#05060a">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop stop-color='%23a78bfa'/><stop offset='1' stop-color='%2322d3ee'/></linearGradient></defs><rect width='32' height='32' rx='9' fill='%2305060a'/><circle cx='16' cy='16' r='8' fill='none' stroke='url(%23g)' stroke-width='3'/><circle cx='16' cy='16' r='2.5' fill='url(%23g)'/></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="container nav">
-    <span class="brand">Cpaz<span class="accent">AI</span></span>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <span class="brand"><span class="mark" aria-hidden="true"></span><span>cpaz<span class="dim">.ai</span></span></span>
+      <span class="chip"><span class="pulse"></span>Lab en progreso · v0.3</span>
+    </div>
   </header>
 
-  <main class="container">
+  <main>
     <section class="hero">
-      <p class="status"><span class="dot"></span>Construyendo ahora mismo</p>
-      <h1>Creamos cosas con <span class="accent">inteligencia artificial</span>.</h1>
-      <p>Somos un pequeño laboratorio. No vendemos nada: experimentamos, construimos y lanzamos ideas solo por el gusto de crear.</p>
+      <canvas id="neural" aria-hidden="true"></canvas>
+      <div class="wrap hero-inner">
+        <p class="kicker mono">// boutique de inteligencia artificial</p>
+        <h1>Construimos en la <span class="grad">frontera</span> de la IA.</h1>
+        <p class="lead">Un estudio pequeño, obsesivo y deliberadamente de nicho. Investigamos, prototipamos y lanzamos ideas con inteligencia artificial antes de que tengan nombre.</p>
+        <div class="hero-meta mono">
+          <span><b>01</b> Investigación aplicada</span>
+          <span><b>02</b> Agentes autónomos</span>
+          <span><b>03</b> Productos experimentales</span>
+        </div>
+      </div>
+      <div class="scroll-hint mono" aria-hidden="true">scroll ↓</div>
     </section>
 
-    <section class="services">
-      <article>
-        <h2>Explorar</h2>
-        <p>Probamos modelos y herramientas nuevas para ver qué es posible.</p>
-      </article>
-      <article>
-        <h2>Prototipar</h2>
-        <p>Convertimos ideas en algo que funciona, rápido y sin miedo a fallar.</p>
-      </article>
-      <article>
-        <h2>Compartir</h2>
-        <p>Publicamos lo que aprendemos y lo que construimos, en abierto.</p>
-      </article>
+    <div class="marquee" aria-hidden="true">
+      <div class="track mono">
+        <span>LLMs</span><i>✦</i><span>Agentes</span><i>✦</i><span>Multimodal</span><i>✦</i><span>RAG</span><i>✦</i><span>Visión artificial</span><i>✦</i><span>Fine-tuning</span><i>✦</i><span>Edge AI</span><i>✦</i><span>Generativa</span><i>✦</i>
+        <span>LLMs</span><i>✦</i><span>Agentes</span><i>✦</i><span>Multimodal</span><i>✦</i><span>RAG</span><i>✦</i><span>Visión artificial</span><i>✦</i><span>Fine-tuning</span><i>✦</i><span>Edge AI</span><i>✦</i><span>Generativa</span><i>✦</i>
+      </div>
+    </div>
+
+    <section class="section wrap">
+      <header class="section-head">
+        <p class="kicker mono">// manifiesto</p>
+        <h2>No vendemos. <span class="dim">Creamos.</span></h2>
+      </header>
+      <div class="pillars">
+        <article class="glass">
+          <span class="num mono">01</span>
+          <h3>Explorar</h3>
+          <p>Probamos cada modelo, cada paper y cada herramienta nueva el día que sale. La curiosidad es nuestra hoja de ruta.</p>
+        </article>
+        <article class="glass">
+          <span class="num mono">02</span>
+          <h3>Prototipar</h3>
+          <p>De la idea al prototipo funcional en días, no en meses. Iteramos rápido y aceptamos fallar como parte del método.</p>
+        </article>
+        <article class="glass">
+          <span class="num mono">03</span>
+          <h3>Lanzar</h3>
+          <p>Lo que funciona sale al mundo. Lo que aprendemos, también. Construimos en público y en abierto.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section wrap">
+      <header class="section-head">
+        <p class="kicker mono">// en el laboratorio</p>
+        <h2>Trabajo en curso.</h2>
+      </header>
+      <ul class="lab">
+        <li class="glass">
+          <div class="lab-top"><span class="tag mono">investigación</span><span class="pct mono">72%</span></div>
+          <h3>Agentes que razonan sobre su propio código</h3>
+          <div class="bar"><i style="--p:72%"></i></div>
+        </li>
+        <li class="glass">
+          <div class="lab-top"><span class="tag mono">prototipo</span><span class="pct mono">45%</span></div>
+          <h3>Memoria a largo plazo para asistentes personales</h3>
+          <div class="bar"><i style="--p:45%"></i></div>
+        </li>
+        <li class="glass">
+          <div class="lab-top"><span class="tag mono">beta privada</span><span class="pct mono">88%</span></div>
+          <h3>Visión artificial ligera para dispositivos edge</h3>
+          <div class="bar"><i style="--p:88%"></i></div>
+        </li>
+        <li class="glass">
+          <div class="lab-top"><span class="tag mono">idea</span><span class="pct mono">12%</span></div>
+          <h3>Interfaces generativas que se diseñan solas</h3>
+          <div class="bar"><i style="--p:12%"></i></div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="closing wrap">
+      <p class="kicker mono">// estado</p>
+      <p class="big">Siempre en <span class="grad">beta</span>.<br>Nunca terminado.</p>
+      <p class="terminal mono" aria-label="Construyendo el siguiente experimento"><span class="prompt">$</span> <span id="typed"></span><span class="caret"></span></p>
     </section>
   </main>
 
-  <footer class="container footer">© 2026 Cpaz AI</footer>
+  <footer class="footer wrap mono">
+    <span>© 2026 Cpaz AI</span>
+    <span>Boutique de IA · Hecho con curiosidad</span>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
