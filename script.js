@@ -110,10 +110,10 @@ if ('IntersectionObserver' in window && !reduceMotion) {
 (() => {
   const el = document.getElementById('typed');
   const lines = [
-    'entrenando el siguiente experimento…',
-    'desplegando agente v0.3 en el lab…',
-    'probando un modelo publicado hoy…',
-    'prototipando una idea sin nombre…',
+    'git commit -m "ahora sí funciona"',
+    'npm run dev',
+    'git revert HEAD  # mejor no',
+    'python prueba_rapida.py',
   ];
   if (reduceMotion) { el.textContent = lines[0]; return; }
   let li = 0, ci = 0, deleting = false;

@@ -1,5 +1,5 @@
 # Cpaz AI
 
-Web de Cpaz AI, boutique de inteligencia artificial.
+Web de cpaz, una startup de una sola persona que construye con IA.
 
 Publicada con GitHub Pages: https://www.cpaz.es
