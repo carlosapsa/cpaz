@@ -34,7 +34,7 @@ const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').match
     const wide = w > 860;
     cx = wide ? w * 0.72 : w * 0.5;
     cy = wide ? h * 0.5 : h * 0.3;
-    R = wide ? Math.min(w, h) * 0.36 : Math.min(w, h) * 0.42;
+    R = wide ? Math.min(w, h) * 0.38 : Math.min(w, h) * 0.46;
   }
   resize();
   window.addEventListener('resize', resize);
@@ -91,7 +91,7 @@ const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').match
 })();
 
 // Aparición al hacer scroll
-const targets = document.querySelectorAll('.section-head, .glass, .closing > *');
+const targets = document.querySelectorAll('.keys article, .closing > *');
 if ('IntersectionObserver' in window && !reduceMotion) {
   targets.forEach((el) => el.classList.add('reveal'));
   const io = new IntersectionObserver((entries) => {
@@ -110,10 +110,9 @@ if ('IntersectionObserver' in window && !reduceMotion) {
 (() => {
   const el = document.getElementById('typed');
   const lines = [
-    'git commit -m "ahora sí funciona"',
-    'npm run dev',
-    'git revert HEAD  # mejor no',
-    'python prueba_rapida.py',
+    'build --prod',
+    'train --model next',
+    'deploy',
   ];
   if (reduceMotion) { el.textContent = lines[0]; return; }
   let li = 0, ci = 0, deleting = false;

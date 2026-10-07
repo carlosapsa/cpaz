@@ -1,5 +1,5 @@
 # Cpaz AI
 
-Web de cpaz, una startup que construye herramientas con IA.
+Web de cpaz.
 
 Publicada con GitHub Pages: https://www.cpaz.es

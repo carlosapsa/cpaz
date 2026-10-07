@@ -160,3 +160,20 @@ h1, h2, h3 { margin: 0; font-weight: 700; letter-spacing: -.035em; line-height: 
 }
 
 .note { font-size: .75rem; color: var(--muted); margin: 16px 0 0; }
+
+/* v3: landing sobria */
+.hero h1 { max-width: 14ch; font-size: clamp(2.8rem, 7vw, 6.2rem); }
+.slogan {
+  margin: 32px 0 0; max-width: 32ch;
+  font-size: clamp(1.05rem, 1.8vw, 1.35rem); color: var(--muted); font-weight: 400; letter-spacing: -.01em;
+}
+.keys { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); }
+.keys article { padding: 40px 32px 0 0; }
+.keys article + article { padding-left: 32px; border-left: 1px solid var(--line); }
+.keys h2 { font-size: clamp(1.8rem, 3.6vw, 2.8rem); margin: 28px 0 12px; }
+.keys p { color: var(--muted); margin: 0; }
+@media (max-width: 860px) {
+  .keys { grid-template-columns: 1fr; }
+  .keys article, .keys article + article { padding: 32px 0; border-left: 0; border-bottom: 1px solid var(--line); }
+  .keys h2 { margin-top: 16px; }
+}
